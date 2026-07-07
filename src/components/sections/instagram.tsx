@@ -2,14 +2,14 @@ import { AtSign, ExternalLink } from "lucide-react";
 import { cafeInfo } from "@/lib/cafe-data";
 
 export function Instagram() {
-  // Grid of food images from Unsplash
+  // Grid of food images — real café photos
   const instaImages = [
-    "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&q=80",
-    "https://images.unsplash.com/photo-1521017432531-fbd62d7051dc?w=400&q=80",
-    "https://images.unsplash.com/photo-1530253266512-8c42e48d6d80?w=400&q=80",
-    "https://images.unsplash.com/photo-1485962398705-ef6a13c41ec8?w=400&q=80",
-    "https://images.unsplash.com/photo-1485808191679-5f8ed105675e?w=400&q=80",
-    "https://images.unsplash.com/photo-1446041925377-c2c035a6a0e5?w=400&q=80",
+    "/gallery/cafe-1.png",
+    "/gallery/cafe-2.png",
+    "/gallery/cafe-3.png",
+    "/gallery/cafe-4.png",
+    "/gallery/cafe-5.png",
+    "/gallery/cafe-6.png",
   ];
 
   return (

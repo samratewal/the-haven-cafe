@@ -330,21 +330,19 @@ export const transportInfo: TransportInfo[] = [
   { icon: "Footprints", title: "Walking", description: "Close to Newhaven Harbour and Edinburgh's scenic waterfront." },
 ];
 
-// ── Gallery images (Unsplash) ────────────────────────────────
+// ── Gallery images (real café photos) ────────────────────────
 export const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80", alt: "Café interior with natural light", span: "row-span-2" },
-  { src: "https://images.unsplash.com/photo-1521017432531-fbd62d7051dc?w=600&q=80", alt: "Coffee being poured", span: "" },
-  { src: "https://images.unsplash.com/photo-1530253266512-8c42e48d6d80?w=600&q=80", alt: "Freshly baked croissants", span: "" },
-  { src: "https://images.unsplash.com/photo-1485962398705-ef6a13c41ec8?w=600&q=80", alt: "Full breakfast plate", span: "row-span-2" },
-  { src: "https://images.unsplash.com/photo-1485808191679-5f8ed105675e?w=600&q=80", alt: "Pancakes with berries", span: "" },
-  { src: "https://images.unsplash.com/photo-1446041925377-c2c035a6a0e5?w=600&q=80", alt: "Latte art in a ceramic cup", span: "" },
-  { src: "https://images.unsplash.com/photo-1463749577819-9bab26f7de23?w=600&q=80", alt: "Tea being served", span: "" },
-  { src: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80", alt: "Salad plate on wooden table", span: "" },
-  { src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80", alt: "Café table with coffee and pastry", span: "" },
+  { src: "/gallery/cafe-1.png", alt: "The Haven Café — food and drink", span: "row-span-2" },
+  { src: "/gallery/cafe-2.png", alt: "The Haven Café — interior and dishes", span: "" },
+  { src: "/gallery/cafe-3.png", alt: "The Haven Café — breakfast and coffee", span: "" },
+  { src: "/gallery/cafe-4.png", alt: "The Haven Café — menu and specials", span: "row-span-2" },
+  { src: "/gallery/cafe-5.png", alt: "The Haven Café — brunch and pancakes", span: "" },
+  { src: "/gallery/cafe-6.png", alt: "The Haven Café — coffee and cakes", span: "" },
+  { src: "/gallery/cafe-7.png", alt: "The Haven Café — atmosphere", span: "" },
+  { src: "/gallery/cafe-8.png", alt: "The Haven Café — Newhaven location", span: "" },
+  { src: "/gallery/cafe-9.png", alt: "The Haven Café — hospitality", span: "" },
 ];
 
-// ── Hero images ──────────────────────────────────────────────
-export const heroImage =
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1920&q=80";
-export const aboutImage =
-  "https://images.unsplash.com/photo-1463749577819-9bab26f7de23?w=800&q=80";
+// ── Hero / about images ─────────────────────────────────────
+export const heroImage = "/gallery/cafe-5.png";
+export const aboutImage = "/gallery/cafe-2.png";
