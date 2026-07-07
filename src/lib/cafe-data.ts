@@ -344,5 +344,5 @@ export const galleryImages = [
 ];
 
 // ── Hero / about images ─────────────────────────────────────
-export const heroImage = "/gallery/cafe-5.png";
+export const heroImage = "/gallery/hero-cafe.png";
 export const aboutImage = "/gallery/cafe-2.png";
