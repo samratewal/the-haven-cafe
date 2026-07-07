@@ -3,6 +3,7 @@ import { About } from "@/components/sections/about";
 import { Menu } from "@/components/sections/menu";
 import { Features } from "@/components/sections/features";
 import { Reviews } from "@/components/sections/reviews";
+import { TeamSection } from "@/components/sections/team";
 import { Instagram } from "@/components/sections/instagram";
 import { Gallery } from "@/components/sections/gallery";
 import { FAQ } from "@/components/sections/faq";
@@ -17,6 +18,7 @@ export default function Home() {
       <Menu />
       <Features />
       <Reviews />
+      <TeamSection />
       <Instagram />
       <Gallery />
       <FAQ />

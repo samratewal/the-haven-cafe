@@ -12,7 +12,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#menu", label: "Menu" },
   { href: "#reviews", label: "Reviews" },
-  { href: "/team", label: "Team" },
+  { href: "#team", label: "Team" },
   { href: "#gallery", label: "Gallery" },
   { href: "#location", label: "Location" },
   { href: "#contact", label: "Contact" },

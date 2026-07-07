@@ -77,7 +77,7 @@ export function Footer() {
                 <a href="#menu" className="text-muted-foreground transition-colors hover:text-primary">Menu</a>
               </li>
               <li>
-                <a href="/team" className="text-muted-foreground transition-colors hover:text-primary">Team</a>
+                <a href="/#team" className="text-muted-foreground transition-colors hover:text-primary">Team</a>
               </li>
               <li>
                 <a href="#reviews" className="text-muted-foreground transition-colors hover:text-primary">Reviews</a>
