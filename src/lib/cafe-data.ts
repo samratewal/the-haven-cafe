@@ -333,6 +333,7 @@ export const transportInfo: TransportInfo[] = [
 // ── Gallery images (real café photos) ────────────────────────
 export const galleryImages = [
   { src: "/gallery/new/haven-1.webp", alt: "The Haven Café — food and drink", span: "row-span-2" },
+  { src: "/gallery/cafe-1.png", alt: "The Haven Café — breakfast spread", span: "" },
   { src: "/gallery/new/haven-2.webp", alt: "The Haven Café — interior and dishes", span: "" },
   { src: "/gallery/new/haven-3.webp", alt: "The Haven Café — breakfast and coffee", span: "" },
   { src: "/gallery/new/haven-4.webp", alt: "The Haven Café — menu and specials", span: "row-span-2" },
