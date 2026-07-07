@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Coffee, Heart, Users } from "lucide-react";
 import { ButtonLink } from "@/components/ui/button-link";
 import { teamMembers, cafeInfo } from "@/lib/cafe-data";
@@ -41,16 +40,11 @@ export default function TeamPage() {
                 key={member.name}
                 className="group flex flex-col overflow-hidden rounded-2xl border border-border/40 bg-card transition-all hover:shadow-xl"
               >
-                {/* Photo */}
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={`${member.name} — ${member.role} at The Haven Café`}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+                {/* Avatar icon */}
+                <div className="flex aspect-[4/5] items-center justify-center bg-secondary/40">
+                  <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 transition-transform duration-500 group-hover:scale-105">
+                    <Users className="h-12 w-12 text-primary" />
+                  </div>
                 </div>
 
                 {/* Info */}
