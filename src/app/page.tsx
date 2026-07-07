@@ -148,7 +148,7 @@ export default function Home() {
           Come sit a while with us
         </h2>
         <p className="mx-auto mt-3 max-w-md text-muted-foreground">
-          Reserve a table for breakfast, lunch, or just a coffee and a slice of cake.
+          Reserve a table for breakfast, lunch, or just a coffee and a slice of cake. Walk-ins welcome too!
         </p>
         <ButtonLink href="/reservations" size="lg" className="mt-6 rounded-full">
           Reserve Your Spot
