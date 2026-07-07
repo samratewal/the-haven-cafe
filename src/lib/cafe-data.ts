@@ -332,17 +332,62 @@ export const transportInfo: TransportInfo[] = [
 
 // ── Gallery images (real café photos) ────────────────────────
 export const galleryImages = [
-  { src: "/gallery/cafe-1.png", alt: "The Haven Café — food and drink", span: "row-span-2" },
-  { src: "/gallery/cafe-2.png", alt: "The Haven Café — interior and dishes", span: "" },
-  { src: "/gallery/cafe-3.png", alt: "The Haven Café — breakfast and coffee", span: "" },
-  { src: "/gallery/cafe-4.png", alt: "The Haven Café — menu and specials", span: "row-span-2" },
-  { src: "/gallery/cafe-5.png", alt: "The Haven Café — brunch and pancakes", span: "" },
-  { src: "/gallery/cafe-6.png", alt: "The Haven Café — coffee and cakes", span: "" },
+  { src: "/gallery/new/haven-1.webp", alt: "The Haven Café — food and drink", span: "row-span-2" },
+  { src: "/gallery/new/haven-2.webp", alt: "The Haven Café — interior and dishes", span: "" },
+  { src: "/gallery/new/haven-3.webp", alt: "The Haven Café — breakfast and coffee", span: "" },
+  { src: "/gallery/new/haven-4.webp", alt: "The Haven Café — menu and specials", span: "row-span-2" },
+  { src: "/gallery/new/haven-5.webp", alt: "The Haven Café — brunch and pancakes", span: "" },
+  { src: "/gallery/new/haven-6.webp", alt: "The Haven Café — coffee and cakes", span: "" },
   { src: "/gallery/cafe-7.png", alt: "The Haven Café — atmosphere", span: "" },
   { src: "/gallery/cafe-8.png", alt: "The Haven Café — Newhaven location", span: "" },
   { src: "/gallery/cafe-9.png", alt: "The Haven Café — hospitality", span: "" },
 ];
 
+// ── Instagram images ─────────────────────────────────────────
+export const instagramImages = [
+  "/gallery/new/haven-1.webp",
+  "/gallery/new/haven-2.webp",
+  "/gallery/new/haven-3.webp",
+  "/gallery/new/haven-4.webp",
+  "/gallery/new/haven-5.webp",
+  "/gallery/new/haven-6.webp",
+];
+
 // ── Hero / about images ─────────────────────────────────────
-export const heroImage = "/gallery/hero-cafe.png";
-export const aboutImage = "/gallery/cafe-2.png";
+export const heroImage = "/gallery/new/haven-1.webp";
+export const aboutImage = "/gallery/new/haven-3.webp";
+
+// ── Team ─────────────────────────────────────────────────────
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+}
+
+export const teamMembers: TeamMember[] = [
+  {
+    name: "Fiona McAllister",
+    role: "Owner & Founder",
+    bio: "Fiona opened The Haven Café in 2019 with a simple dream — to bring a touch of Scandinavian warmth to the Edinburgh waterfront. She greets every guest like an old friend and still makes the best flat white in Newhaven.",
+    image: "/gallery/new/haven-2.webp",
+  },
+  {
+    name: "Calum Reid",
+    role: "Head Barista",
+    bio: "A Edinburgh native with a passion for single-origin beans and latte art, Calum trained with specialty roasters across Scotland. Ask him about his pour-over method — he'll talk for hours.",
+    image: "/gallery/new/haven-4.webp",
+  },
+  {
+    name: "Ailsa Graham",
+    role: "Head Chef",
+    bio: "Ailsa brings farm-to-table sensibility to every plate. She sources produce from local Scottish growers and is the creative mind behind the famous Havenette Spesh and our weekend specials.",
+    image: "/gallery/new/haven-6.webp",
+  },
+  {
+    name: "Rory Mackenzie",
+    role: "Barista & All-Rounder",
+    bio: "Rory's the one who remembers your regular order. When he's not pulling the perfect espresso, you'll find him restocking the cake display and keeping the whole place running smoothly.",
+    image: "/gallery/new/haven-5.webp",
+  },
+];

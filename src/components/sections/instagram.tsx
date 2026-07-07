@@ -1,17 +1,6 @@
 import { AtSign, ExternalLink } from "lucide-react";
-import { cafeInfo } from "@/lib/cafe-data";
-
+import { cafeInfo, instagramImages } from "@/lib/cafe-data";
 export function Instagram() {
-  // Grid of food images — real café photos
-  const instaImages = [
-    "/gallery/cafe-1.png",
-    "/gallery/cafe-2.png",
-    "/gallery/cafe-3.png",
-    "/gallery/cafe-4.png",
-    "/gallery/cafe-5.png",
-    "/gallery/cafe-6.png",
-  ];
-
   return (
     <section className="bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
@@ -41,7 +30,7 @@ export function Instagram() {
           rel="noopener noreferrer"
           className="grid grid-cols-2 gap-3 sm:grid-cols-3"
         >
-          {instaImages.map((src, i) => (
+          {instagramImages.map((src, i) => (
             <div
               key={i}
               className="group relative aspect-square overflow-hidden rounded-xl"

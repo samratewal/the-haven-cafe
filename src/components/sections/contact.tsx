@@ -60,50 +60,53 @@ export function Contact() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           {/* Left: Contact info */}
           <div className="lg:col-span-2">
-            <div className="space-y-4 rounded-2xl border border-border/40 bg-card p-6">
-              <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                  <MapPin className="h-5 w-5 text-primary" />
+            <div className="space-y-6 rounded-2xl border border-border/40 bg-card p-8 shadow-sm">
+              <h3 className="font-heading text-xl font-semibold">Visit or call</h3>
+              <div className="space-y-5">
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <MapPin className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Address</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {cafeInfo.address.line1}
+                      <br />
+                      {cafeInfo.address.line2}
+                      <br />
+                      {cafeInfo.address.line3}
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-medium">Address</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {cafeInfo.address.line1}
-                    <br />
-                    {cafeInfo.address.line2}
-                    <br />
-                    {cafeInfo.address.line3}
-                  </p>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                  <Phone className="h-5 w-5 text-primary" />
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Phone className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Phone</p>
+                    <a
+                      href={cafeInfo.phoneHref}
+                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      {cafeInfo.phone}
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-medium">Phone</p>
-                  <a
-                    href={cafeInfo.phoneHref}
-                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    {cafeInfo.phone}
-                  </a>
-                </div>
-              </div>
 
-              <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
-                  <Mail className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium">Email</p>
-                  <a
-                    href={`mailto:${cafeInfo.email}`}
-                    className="text-sm text-muted-foreground transition-colors hover:text-primary"
-                  >
-                    {cafeInfo.email}
-                  </a>
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10">
+                    <Mail className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold">Email</p>
+                    <a
+                      href={`mailto:${cafeInfo.email}`}
+                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      {cafeInfo.email}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -111,10 +114,10 @@ export function Contact() {
             {/* Click-to-call button */}
             <a
               href={cafeInfo.phoneHref}
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 text-primary-foreground transition-colors hover:bg-primary/80"
+              className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-4 font-medium text-primary-foreground shadow-md transition-all hover:bg-primary/90 hover:shadow-lg"
             >
               <Phone className="h-5 w-5" />
-              <span className="font-medium">Call us: {cafeInfo.phone}</span>
+              <span>Call us: {cafeInfo.phone}</span>
             </a>
           </div>
 
@@ -142,8 +145,9 @@ export function Contact() {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5 rounded-2xl border border-border/40 bg-card p-6"
+                className="space-y-5 rounded-2xl border border-border/40 bg-card p-8 shadow-sm"
               >
+                <h3 className="font-heading text-xl font-semibold">Send a message</h3>
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Name *</Label>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Heart, Leaf, Users, Award } from "lucide-react";
+import { ButtonLink } from "@/components/ui/button-link";
 import { aboutImage } from "@/lib/cafe-data";
 
 const values = [
@@ -32,10 +33,10 @@ export function About() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
               <Image
                 src={aboutImage}
-                alt="Tea being served at The Haven Café"
+                alt="Freshly prepared food and coffee at The Haven Café"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -72,6 +73,11 @@ export function About() {
                 haven.
               </p>
             </div>
+            <div className="pt-2">
+              <ButtonLink href="/team" variant="outline" className="rounded-full">
+                Meet the team →
+              </ButtonLink>
+            </div>
           </div>
         </div>
 
@@ -80,7 +86,7 @@ export function About() {
           {values.map((value) => (
             <div
               key={value.title}
-              className="rounded-2xl border border-border/40 bg-card p-6 transition-shadow hover:shadow-lg"
+              className="rounded-2xl border border-border/40 bg-card p-6 transition-all hover:shadow-lg hover:border-primary/30"
             >
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                 <value.icon className="h-6 w-6 text-primary" />

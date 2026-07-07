@@ -100,20 +100,22 @@ export function Reviews() {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`relative flex flex-col gap-4 rounded-2xl border border-border/40 bg-card p-6 transition-all hover:shadow-lg ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+              className={`relative flex flex-col gap-4 rounded-2xl border border-border/40 bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: `${0.1 * (i + 1)}s` }}
             >
-              <Quote className="h-8 w-8 text-primary/20" />
+              <div className="absolute right-6 top-6">
+                <Quote className="h-10 w-10 text-primary/15" />
+              </div>
               <StarRating rating={t.rating} size="h-4 w-4" />
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-foreground/90 leading-relaxed">
                 &ldquo;{t.text}&rdquo;
               </p>
-              <div className="mt-auto flex items-center gap-3 pt-4">
+              <div className="mt-auto flex items-center gap-3 border-t border-border/30 pt-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
                   {t.initials}
                 </div>
                 <div>
-                  <p className="text-sm font-medium">{t.name}</p>
+                  <p className="text-sm font-semibold">{t.name}</p>
                   <p className="text-xs text-muted-foreground">
                     {t.date} · {t.source}
                   </p>
