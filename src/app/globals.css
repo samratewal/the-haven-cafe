@@ -306,7 +306,12 @@
 
 /* Bento gallery grid */
 .gallery-bento {
-  grid-auto-rows: 180px;
+  grid-auto-rows: 130px;
+}
+@media (min-width: 640px) {
+  .gallery-bento {
+    grid-auto-rows: 180px;
+  }
 }
 .gallery-bento > * {
   height: 100%;

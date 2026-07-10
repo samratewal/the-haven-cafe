@@ -63,7 +63,7 @@ function MenuItemRow({
 
 export function Menu() {
   return (
-    <section id="menu" className="bg-secondary/20 py-24 sm:py-32">
+    <section id="menu" className="bg-secondary/20 py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -83,13 +83,13 @@ export function Menu() {
         <div className="rounded-3xl border border-border/40 bg-card p-6 shadow-sm sm:p-10">
           {/* Tabs */}
           <Tabs defaultValue="Breakfast" className="mx-auto w-full">
-            <div className="mb-8 flex justify-center">
+            <div className="mb-8 flex justify-center overflow-x-auto pb-2">
               <TabsList className="rounded-full p-1">
                 {(Object.keys(menuData) as MenuTab[]).map((tab) => (
                   <TabsTrigger
                     key={tab}
                     value={tab}
-                    className="rounded-full px-4 py-2 text-sm font-medium"
+                    className="rounded-full px-3 py-2 text-xs font-medium sm:px-4 sm:text-sm"
                   >
                     {tab}
                   </TabsTrigger>

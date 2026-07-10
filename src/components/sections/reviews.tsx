@@ -26,7 +26,7 @@ export function Reviews() {
   const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
   return (
-    <section id="reviews" className="bg-secondary/20 py-24 sm:py-32">
+    <section id="reviews" className="bg-secondary/20 py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -41,7 +41,7 @@ export function Reviews() {
         {/* Rating overview */}
         <div
           ref={ref}
-          className={`mx-auto mb-16 grid max-w-4xl grid-cols-1 gap-8 rounded-3xl border border-border/40 bg-card p-8 md:grid-cols-2 lg:p-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
+          className={`mx-auto mb-16 grid max-w-4xl grid-cols-1 gap-6 rounded-3xl border border-border/40 bg-card p-6 md:grid-cols-2 md:gap-8 md:p-8 lg:p-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
         >
           {/* Left: Score + breakdown */}
           <div className="flex flex-col items-center justify-center gap-4 border-b border-border/40 pb-8 md:border-b-0 md:border-r md:pb-0 md:pr-8">
@@ -79,7 +79,7 @@ export function Reviews() {
         </div>
 
         {/* Rating categories */}
-        <div className="mx-auto mb-16 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="mx-auto mb-16 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
           {reviewRatings.map((rating, i) => (
             <div
               key={rating.label}

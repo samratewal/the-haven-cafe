@@ -27,7 +27,7 @@ const teamMembers = [
 
 export function TeamSection() {
   return (
-    <section id="team" className="bg-secondary/20 py-20 sm:py-28">
+    <section id="team" className="bg-secondary/20 py-16 sm:py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -62,7 +62,7 @@ export function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="group flex flex-col rounded-2xl border border-border/40 bg-card p-8 text-center transition-all hover:shadow-xl"
+              className="group flex flex-col rounded-2xl border border-border/40 bg-card p-6 text-center transition-all hover:shadow-xl sm:p-8"
             >
               <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10 transition-transform duration-500 group-hover:scale-105">
                 <Users className="h-10 w-10 text-primary" />

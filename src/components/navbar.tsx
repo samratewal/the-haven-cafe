@@ -46,7 +46,7 @@ export function Navbar() {
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10">
             <Coffee className="h-5 w-5 text-primary" />
           </div>
-          <span className="font-heading text-lg font-bold tracking-tight text-foreground">
+          <span className="font-heading text-base font-bold tracking-tight text-foreground sm:text-lg">
             The Haven Café
           </span>
         </Link>

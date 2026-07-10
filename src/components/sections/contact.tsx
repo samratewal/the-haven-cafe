@@ -42,7 +42,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-background py-24 sm:py-32">
+    <section id="contact" className="bg-background py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
@@ -60,7 +60,7 @@ export function Contact() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           {/* Left: Contact info */}
           <div className="lg:col-span-2">
-            <div className="space-y-6 rounded-2xl border border-border/40 bg-card p-8 shadow-sm">
+            <div className="space-y-6 rounded-2xl border border-border/40 bg-card p-6 shadow-sm sm:p-8">
               <h3 className="font-heading text-xl font-semibold">Visit or call</h3>
               <div className="space-y-5">
                 <div className="flex items-start gap-3">
@@ -145,7 +145,7 @@ export function Contact() {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5 rounded-2xl border border-border/40 bg-card p-8 shadow-sm"
+                className="space-y-5 rounded-2xl border border-border/40 bg-card p-6 shadow-sm sm:p-8"
               >
                 <h3 className="font-heading text-xl font-semibold">Send a message</h3>
                 <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
