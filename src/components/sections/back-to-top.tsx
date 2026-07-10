@@ -8,7 +8,7 @@ export function BackToTop() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShow(window.scrollY > 600);
+      setShow(window.scrollY > 500);
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll);
@@ -19,13 +19,13 @@ export function BackToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (!show) return null;
-
   return (
     <button
       onClick={scrollToTop}
       aria-label="Back to top"
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg transition-all hover:scale-110 hover:bg-primary/80 animate-fade-in"
+      className={`fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 transition-all duration-300 hover:scale-110 hover:bg-primary/85 ${
+        show ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+      }`}
     >
       <ArrowUp className="h-5 w-5" />
     </button>
