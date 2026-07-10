@@ -20,8 +20,8 @@ export default function Home() {
       <Features />
       <Instagram />
       <Location />
-      <FAQ />
       <Reviews />
+      <FAQ />
       <TeamSection />
       <Contact />
     </>

@@ -86,6 +86,9 @@ export function Footer() {
                 <a href="#reviews" className="text-muted-foreground transition-colors hover:text-primary">Reviews</a>
               </li>
               <li>
+                <a href="#faq" className="text-muted-foreground transition-colors hover:text-primary">FAQ</a>
+              </li>
+              <li>
                 <a href="#team" className="text-muted-foreground transition-colors hover:text-primary">Team</a>
               </li>
               <li>
