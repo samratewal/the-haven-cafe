@@ -80,10 +80,11 @@ export function Reviews() {
 
         {/* Rating categories */}
         <div className="mx-auto mb-16 grid max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-          {reviewRatings.map((rating) => (
+          {reviewRatings.map((rating, i) => (
             <div
               key={rating.label}
-              className="rounded-2xl border border-border/40 bg-card p-5 text-center"
+              className={`rounded-2xl border border-border/40 bg-card p-5 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30 ${isVisible ? "animate-scale-in" : "opacity-0"}`}
+              style={{ animationDelay: `${0.2 + i * 0.1}s` }}
             >
               <div className="text-3xl font-bold text-foreground">
                 {rating.score}
@@ -100,8 +101,8 @@ export function Reviews() {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className={`relative flex flex-col gap-4 rounded-2xl border border-border/40 bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}
-              style={{ animationDelay: `${0.1 * (i + 1)}s` }}
+              className={`relative flex flex-col gap-4 rounded-2xl border border-border/40 bg-card p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:border-primary/30 ${isVisible ? "animate-slide-up" : "opacity-0"}`}
+              style={{ animationDelay: `${0.3 + i * 0.12}s` }}
             >
               <div className="absolute right-6 top-6">
                 <Quote className="h-10 w-10 text-primary/15" />

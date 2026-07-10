@@ -21,20 +21,25 @@ export function Gallery() {
         {/* Bento grid */}
         <div
           ref={ref}
-          className={`gallery-bento grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 ${isVisible ? "animate-fade-in" : "opacity-0"}`}
+          className="gallery-bento grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4"
         >
           {galleryImages.map((img, i) => (
             <div
               key={i}
-              className={`group relative overflow-hidden rounded-xl ${img.span || ""}`}
+              className={`group relative overflow-hidden rounded-xl ${img.span || ""} ${
+                isVisible ? "animate-scale-in" : "opacity-0"
+              }`}
+              style={{ animationDelay: `${i * 0.08}s` }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={img.src}
                 alt={img.alt}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
               />
+              {/* Hover overlay */}
+              <div className="absolute inset-0 bg-primary/0 transition-colors duration-300 group-hover:bg-primary/10" />
             </div>
           ))}
         </div>

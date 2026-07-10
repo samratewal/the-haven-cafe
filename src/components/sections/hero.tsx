@@ -28,8 +28,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/30" />
 
       {/* Warm sage glow accents */}
-      <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-sage/20 blur-[120px]" />
-      <div className="absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-sage/15 blur-[120px]" />
+      <div className="absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-sage/20 blur-[120px] animate-glow-pulse" />
+      <div className="absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-sage/15 blur-[120px] animate-glow-pulse" style={{ animationDelay: "2s" }} />
 
       {/* Content */}
       <div className="relative flex min-h-[100svh] flex-col items-center justify-center px-4 text-center">

@@ -22,7 +22,7 @@ function MenuItemRow({
   vegan?: boolean;
 }) {
   return (
-    <div className="group rounded-xl p-4 transition-colors hover:bg-accent/30">
+    <div className="group rounded-xl p-4 transition-all duration-300 hover:bg-accent/30 hover:scale-[1.02]">
       <div className="flex items-baseline gap-2">
         <h3 className="font-heading text-base font-semibold">{name}</h3>
         <span className="flex-1 border-b border-dotted border-border/60" />
