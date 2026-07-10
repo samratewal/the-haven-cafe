@@ -15,7 +15,7 @@ export const cafeInfo = {
   email: "hello@thehavencafe.co.uk",
   instagram: "https://www.instagram.com/thehavencafe/",
   instagramHandle: "@thehavencafe",
-  hours: "Open Daily 9:00 AM – 4:00 PM",
+  hours: "Mon–Fri 8:30 AM – 4:00 PM · Sat–Sun 9:00 AM – 4:00 PM",
   rating: 4.7,
   reviewCount: 409,
   ranking: "#115 of 2,222 Restaurants in Edinburgh",
@@ -26,11 +26,11 @@ export const cafeInfo = {
 
 // ── Opening hours ────────────────────────────────────────────
 export const openingHours = [
-  { day: "Monday", hours: "9:00 AM – 4:00 PM" },
-  { day: "Tuesday", hours: "9:00 AM – 4:00 PM" },
-  { day: "Wednesday", hours: "9:00 AM – 4:00 PM" },
-  { day: "Thursday", hours: "9:00 AM – 4:00 PM" },
-  { day: "Friday", hours: "9:00 AM – 4:00 PM" },
+  { day: "Monday", hours: "8:30 AM – 4:00 PM" },
+  { day: "Tuesday", hours: "8:30 AM – 4:00 PM" },
+  { day: "Wednesday", hours: "8:30 AM – 4:00 PM" },
+  { day: "Thursday", hours: "8:30 AM – 4:00 PM" },
+  { day: "Friday", hours: "8:30 AM – 4:00 PM" },
   { day: "Saturday", hours: "9:00 AM – 4:00 PM" },
   { day: "Sunday", hours: "9:00 AM – 4:00 PM" },
 ];

@@ -39,7 +39,7 @@ export function Hero() {
             <MapPin className="h-4 w-4 text-sage" />
             Newhaven, Edinburgh
             <span className="h-1 w-1 rounded-full bg-white/40" />
-            Open Daily 9–4
+            Mon–Fri 8:30–4 · Sat–Sun 9–4
           </span>
         </div>
 
