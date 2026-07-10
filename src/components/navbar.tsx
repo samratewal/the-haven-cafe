@@ -11,10 +11,10 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#menu", label: "Menu" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#team", label: "Team" },
   { href: "#gallery", label: "Gallery" },
   { href: "#location", label: "Location" },
+  { href: "#reviews", label: "Reviews" },
+  { href: "#team", label: "Team" },
   { href: "#contact", label: "Contact" },
 ];
 

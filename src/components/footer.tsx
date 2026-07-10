@@ -77,13 +77,16 @@ export function Footer() {
                 <a href="#menu" className="text-muted-foreground transition-colors hover:text-primary">Menu</a>
               </li>
               <li>
-                <a href="/#team" className="text-muted-foreground transition-colors hover:text-primary">Team</a>
+                <a href="#gallery" className="text-muted-foreground transition-colors hover:text-primary">Gallery</a>
+              </li>
+              <li>
+                <a href="#location" className="text-muted-foreground transition-colors hover:text-primary">Location</a>
               </li>
               <li>
                 <a href="#reviews" className="text-muted-foreground transition-colors hover:text-primary">Reviews</a>
               </li>
               <li>
-                <a href="#gallery" className="text-muted-foreground transition-colors hover:text-primary">Gallery</a>
+                <a href="#team" className="text-muted-foreground transition-colors hover:text-primary">Team</a>
               </li>
               <li>
                 <a href="#contact" className="text-muted-foreground transition-colors hover:text-primary">Contact</a>

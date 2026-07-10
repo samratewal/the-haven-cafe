@@ -74,7 +74,7 @@ export function About() {
               </p>
             </div>
             <div className="pt-2">
-              <ButtonLink href="/team" variant="outline" className="rounded-full">
+              <ButtonLink href="#team" variant="outline" className="rounded-full">
                 Meet the team →
               </ButtonLink>
             </div>
