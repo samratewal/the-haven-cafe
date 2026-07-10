@@ -5,7 +5,7 @@ import {
   Wifi, Accessibility, Baby, ShoppingBag, ConciergeBell, ParkingCircle, CreditCard,
   type LucideIcon,
 } from "lucide-react";
-import { features } from "@/lib/cafe-data";
+import { featureCategories } from "@/lib/cafe-data";
 
 const iconMap: Record<string, LucideIcon> = {
   Egg, Utensils, UtensilsCrossed, Wine, Wheat, Leaf, Carrot,
@@ -29,18 +29,36 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {features.map((feature) => {
-            const Icon = iconMap[feature.icon] || Utensils;
+        <div className="grid gap-6 sm:grid-cols-2">
+          {featureCategories.map((category) => {
+            const CategoryIcon = iconMap[category.icon] || Utensils;
             return (
               <div
-                key={feature.label}
-                className="flex flex-col items-center gap-3 rounded-2xl border border-border/40 bg-card p-4 text-center transition-all hover:border-primary/30 hover:shadow-md sm:p-5"
+                key={category.title}
+                className="rounded-2xl border border-border/40 bg-card p-6 transition-all hover:border-primary/30 hover:shadow-md"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Icon className="h-6 w-6 text-primary" />
+                <div className="mb-5 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                    <CategoryIcon className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold">
+                    {category.title}
+                  </h3>
                 </div>
-                <span className="text-sm font-medium">{feature.label}</span>
+                <div className="flex flex-wrap gap-2">
+                  {category.features.map((feature) => {
+                    const Icon = iconMap[feature.icon] || Utensils;
+                    return (
+                      <span
+                        key={feature.label}
+                        className="inline-flex items-center gap-2 rounded-full border border-border/50 bg-background px-3 py-1.5 text-sm font-medium"
+                      >
+                        <Icon className="h-4 w-4 text-primary" />
+                        {feature.label}
+                      </span>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}

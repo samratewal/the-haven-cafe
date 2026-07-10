@@ -16,13 +16,13 @@ export default function Home() {
       <Hero />
       <About />
       <Menu />
+      <Gallery />
       <Features />
+      <Instagram />
+      <Location />
+      <FAQ />
       <Reviews />
       <TeamSection />
-      <Instagram />
-      <Gallery />
-      <FAQ />
-      <Location />
       <Contact />
     </>
   );

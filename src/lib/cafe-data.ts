@@ -201,25 +201,55 @@ export interface Feature {
   label: string;
 }
 
-export const features: Feature[] = [
-  { icon: "Egg", label: "Breakfast" },
-  { icon: "Utensils", label: "Brunch" },
-  { icon: "UtensilsCrossed", label: "Lunch" },
-  { icon: "Wine", label: "British" },
-  { icon: "Wheat", label: "Scottish" },
-  { icon: "Leaf", label: "Vegetarian" },
-  { icon: "Carrot", label: "Vegan" },
-  { icon: "Wheat", label: "Gluten-Free" },
-  { icon: "Wifi", label: "Free WiFi" },
-  { icon: "Accessibility", label: "Wheelchair Access" },
-  { icon: "Baby", label: "Highchairs" },
-  { icon: "ShoppingBag", label: "Takeaway" },
-  { icon: "ConciergeBell", label: "Table Service" },
-  { icon: "ParkingCircle", label: "Parking" },
-  { icon: "CreditCard", label: "Visa" },
-  { icon: "CreditCard", label: "Mastercard" },
-  { icon: "CreditCard", label: "Amex" },
-  { icon: "CreditCard", label: "Credit Cards" },
+export interface FeatureCategory {
+  title: string;
+  icon: string;
+  features: Feature[];
+}
+
+export const featureCategories: FeatureCategory[] = [
+  {
+    title: "Food & Drink",
+    icon: "Utensils",
+    features: [
+      { icon: "Egg", label: "Breakfast" },
+      { icon: "Utensils", label: "Brunch" },
+      { icon: "UtensilsCrossed", label: "Lunch" },
+      { icon: "Wine", label: "British" },
+      { icon: "Wheat", label: "Scottish" },
+    ],
+  },
+  {
+    title: "Dietary Options",
+    icon: "Leaf",
+    features: [
+      { icon: "Leaf", label: "Vegetarian" },
+      { icon: "Carrot", label: "Vegan" },
+      { icon: "Wheat", label: "Gluten-Free" },
+    ],
+  },
+  {
+    title: "Facilities",
+    icon: "ConciergeBell",
+    features: [
+      { icon: "Wifi", label: "Free WiFi" },
+      { icon: "Accessibility", label: "Wheelchair Access" },
+      { icon: "Baby", label: "Highchairs" },
+      { icon: "ShoppingBag", label: "Takeaway" },
+      { icon: "ConciergeBell", label: "Table Service" },
+      { icon: "ParkingCircle", label: "Parking" },
+    ],
+  },
+  {
+    title: "Payments",
+    icon: "CreditCard",
+    features: [
+      { icon: "CreditCard", label: "Visa" },
+      { icon: "CreditCard", label: "Mastercard" },
+      { icon: "CreditCard", label: "Amex" },
+      { icon: "CreditCard", label: "Credit Cards" },
+    ],
+  },
 ];
 
 // ── Reviews ──────────────────────────────────────────────────
