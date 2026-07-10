@@ -343,7 +343,7 @@ export const faqs: FAQ[] = [
   { question: "Do you accept card payments?", answer: "Yes — we accept Visa, Mastercard, and American Express, as well as contactless and mobile payments." },
   { question: "Can I order takeaway?", answer: "Yes, takeaway is available. Pop in or call ahead and we'll have your order ready." },
   { question: "Is parking available?", answer: "Street parking is available nearby on Anchorfield and surrounding roads in Newhaven." },
-  { question: "Are dogs allowed?", answer: "Please contact us for our current policy on dogs — we're happy to discuss and accommodate where we can." },
+  { question: "Are dogs allowed?", answer: "No, dogs are not allowed inside the café." },
 ];
 
 // ── Transport ───────────────────────────────────────────────
